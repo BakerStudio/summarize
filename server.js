@@ -10,6 +10,7 @@ var PORT = 3000;
 app.get('/summarize', function(req, res) {
   console.log(req.query.url)
   var url = req.query.url;
+  // build url query string here
   request.get(
     "https://api.aylien.com/api/v1/summarize?=" + url
   )
