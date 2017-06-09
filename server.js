@@ -12,7 +12,7 @@ app.get('/summarize', function(req, res) {
   var url = req.query.url;
   // build url query string here
   request.get(
-    "https://api.aylien.com/api/v1/summarize?=" + url +"&sentences_number=5"
+    "https://api.aylien.com/api/v1/summarize?url=" + url +"&sentences_number=5"
   )
   .set("X-AYLIEN-TextAPI-Application-ID", "17ee3853")
   .set("X-AYLIEN-TextAPI-Application-Key",
