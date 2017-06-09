@@ -22,6 +22,10 @@
     "superagent": "^3.5.2"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "eslint": "^3.19.0"
+=======
+    "eslint-config-rallycoding": "^3.2.0"
+>>>>>>> e29b320f21788b7344fdb9be4bf54d7deb978a38
   }
 }
