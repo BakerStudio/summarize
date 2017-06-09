@@ -5,6 +5,7 @@ var app = express();
 
 app.use('/static', express.static('.'))
 
+
 var PORT = 3000;
 
 app.get('/summarize', function(req, res) {
