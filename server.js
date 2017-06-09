@@ -12,10 +12,11 @@ app.get('/summarize', function(req, res) {
   var url = req.query.url;
   // build url query string here
   request.get(
-    "https://api.aylien.com/api/v1/summarize?=" + url
+    "https://api.aylien.com/api/v1/summarize?=" + url +"&sentences_number=5"
   )
   .set("X-AYLIEN-TextAPI-Application-ID", "17ee3853")
-  .set("X-AYLIEN-TextAPI-Application-Key", "715b53a94c039fc008d65ed9f2ec9804")
+  .set("X-AYLIEN-TextAPI-Application-Key",
+        "715b53a94c039fc008d65ed9f2ec9804")
   .end(function(err, response) {
     res.send(response);
   })
