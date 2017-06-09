@@ -20,5 +20,8 @@
     "express": "^4.15.3",
     "http-proxy": "^1.16.2",
     "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0"
   }
 }
